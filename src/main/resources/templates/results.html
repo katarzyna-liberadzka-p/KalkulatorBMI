@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>BMI</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <style type="text/css">a{text-decoration: none}</style>
+</head>
+
+<body>
+
+<header class="header" id="header-page">
+    <!--    <div class="container">-->
+    <div class="logo">
+        <a href="/">
+            <h2><strong>BMI </strong>KALKULATOR ONLINE</h2>
+        </a>
+    </div>
+    <div class="header-nav">
+        <ul class="nav">
+            <li>
+                <a href="/">Kalkulator BMI</a>
+            </li>
+<!--            <li>-->
+<!--                <a href="/kalkulator-kalorii">Kalkulator kalorii</a>-->
+<!--            </li>-->
+
+
+            <li>
+                <a href="/ciekawostki">Ciekawostki</a>
+            </li>
+            <li>
+                <a href="#contact">Kontakt</a>
+            </li>
+
+<!--            <li>-->
+<!--                <a href="/bonus">BONUS!</a>-->
+<!--            </li>-->
+
+
+        </ul>
+    </div>
+    <!--    </div>-->
+</header>
+
+
+<section role="main">
+
+    <div class="home" style="background-image: url(home-bg.jpg);"
+         alt="Background"/>
+
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <div class="page_calculate">
+
+                    <h1><strong>Twoje bmi wynosi</strong></h1>
+                        <h2 th:text="${bmi}"/>
+
+                        <h2 th:text="${sex}"/>
+                    <img th:src="${icons}"/>
+
+                        <h2> oznacza </h2>
+                        <h1 th:text="${przedzial}"/>
+
+
+<!--                        <div>-->
+<!--                            <div class="calculate">-->
+<!--                                <button type="submit">-->
+<!--                                    <span>Oblicz</span>-->
+<!--                                </button>-->
+
+<!--                            </div>-->
+
+<!--                        </div>-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<footer>
+    <div class="home_footer" id="contact">
+        <ul>
+            <li>
+                KONTAKT
+            </li>
+            <li>
+                ul. Złota
+            </li>
+            <li>
+                03-285 Warszawa
+            </li>
+        </ul>
+    </div>
+    <div class="home_date">
+        BMI KALKULATOR ONLINE
+        <time datetime="2020-02-29 13:00"> @ 2020 </time>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>

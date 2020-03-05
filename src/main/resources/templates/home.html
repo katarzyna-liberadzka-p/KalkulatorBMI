@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>BMI</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <style type="text/css">a {
+        text-decoration: none
+    }</style>
+</head>
+
+
+<header class="header" id="header-page">
+    <!--    <div class="container">-->
+    <div class="logo">
+        <a href="/">
+            <h2><strong>BMI </strong>KALKULATOR ONLINE</h2>
+        </a>
+    </div>
+    <div class="header-nav">
+        <ul class="nav">
+            <li>
+                <a href="/">Kalkulator BMI</a>
+            </li>
+<!--            <li>-->
+<!--                <a href="/kalkulator-kalorii">Kalkulator kalorii</a>-->
+<!--            </li>-->
+
+
+            <li>
+                <a href="/ciekawostki">Ciekawostki</a>
+            </li>
+            <li>
+                <a href="#contact">Kontakt</a>
+            </li>
+
+<!--            <li>-->
+<!--                <a href="/bonus">BONUS!</a>-->
+<!--            </li>-->
+
+
+        </ul>
+    </div>
+    <!--    </div>-->
+</header>
+
+
+<section role="main">
+
+    <div class="home" style="background-image: url(home-bg.jpg);"
+         alt="Background"/>
+
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <div class="home_calculator">
+                    <form action="/wynik" method="post">
+
+                        <h2> Oblicz swój wskaźnik <strong>BMI</strong></h2>
+
+                        <span class="gender">Płeć:</span>
+
+
+                        <input type="radio" id="bmi-f" name="sex" value="female" checked>
+                        <label for="bmi-f">
+                            <!--                            //for- nawiązuje(jest podłączone pod) do id/klasy o tej samej nazwie-->
+                            <span class="input-gender">K</span>
+                        </label>
+
+
+                        <input type="radio" id="bmi-m" name="sex" value="male">
+                        <label for="bmi-m">
+                            <span class="input-gender">M</span>
+                        </label>
+
+
+                        <div class="weight">
+                            <div class="weight-left">
+                                <label>Waga: </label>
+                            </div>
+                            <div class="weight-right">
+                                <input type="number" name="weight" value>
+                                <span>kg</span>
+                                <!--                                        <span class="error-text-std"></span>-->
+                            </div>
+                        </div>
+
+                        <div class="growth">
+                            <div class="growth-left">
+                                <label>Wzrost: </label>
+                            </div>
+                            <div class="growth-right">
+                                <input type="text" name="height" value>
+
+                                <span>cm</span>
+                                <!--                                        <span class="error-text-std"></span>-->
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="calculate">
+                                <button type="submit">
+                                    <span>Oblicz</span>
+                                </button>
+
+                            </div>
+
+                            <div>
+                                <div class="scope-p">
+
+                                    <p>Zakresy wartości BMI:</p>
+                                    <!--<p th:text="${bmi}"/>-->
+
+                                    <ul class="scope">
+                                        <li>mniej niż 16 - wygłodzenie</li>
+                                        <li>16 - 16.99 - wychudzenie</li>
+                                        <li>17 - 18.49 - niedowaga</li>
+                                        <li>18.5 - 24.99 - wartość prawidłowa</li>
+                                        <li>25 - 29.99 - nadwaga</li>
+                                        <li>30 - 34.99 - I stopień otyłości</li>
+                                        <li>35 - 39.99 - II stopień otyłości</li>
+                                        <li>powyżej 40 - otyłość skrajna</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+
+<footer>
+    <div class="home_footer" id="contact">
+        <ul>
+            <li>
+                KONTAKT
+            </li>
+            <li>
+                ul. Złota
+            </li>
+            <li>
+                03-285 Warszawa
+            </li>
+        </ul>
+    </div>
+    <div class="home_date">
+        BMI KALKULATOR ONLINE
+        <time datetime="2020-02-29 13:00"> @ 2020 </time>
+        <a href="https://bmi-online.pl">   Wykorzystano materiały z serwisu bmi-online.pl</a>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
